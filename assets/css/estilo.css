@@ -172,3 +172,7 @@ code { font-family: ui-monospace, Consolas, monospace; font-size: 0.9em; backgro
 .pie a { color: var(--texto-suave); }
 .pie a:hover { color: var(--dorado); }
 .pie .marcas { font-size: 0.82rem; opacity: 0.8; }
+
+/* Tarjetas que llevan a otra página (manual, novedades y hoja de ruta). */
+.enlace-tarjeta { display: block; color: inherit; text-decoration: none; transition: border-color 0.2s; }
+.enlace-tarjeta:hover { border-color: var(--dorado); color: inherit; }
