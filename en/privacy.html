@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy policy — Estandartes</title>
-  <meta name="description" content="Privacy policy of the Estandartes game for Android, by Kuantis. The game does not collect personal data: no accounts, ads, purchases or analytics.">
+  <meta name="description" content="Privacy policy of the Estandartes game for Android, by Kuantis. The game asks for no account and does not collect your personal data. The shop ads are optional and suitable for children.">
   <link rel="canonical" href="https://kuantis.github.io/estandartes/en/privacy.html">
   <link rel="alternate" hreflang="es" href="https://kuantis.github.io/estandartes/privacidad.html">
   <link rel="alternate" hreflang="en" href="https://kuantis.github.io/estandartes/en/privacy.html">
@@ -30,16 +30,17 @@
   <main id="content" class="legal">
     <div class="contenedor">
       <h1>Estandartes privacy policy</h1>
-      <p class="fecha">Effective October 24, 2026 · Last updated: October 25, 2026 · Version 1.1</p>
+      <p class="fecha">Effective October 24, 2026 · Last updated: November 1, 2026 · Version 2.0 (from game version 0.7.1, the first one with ads)</p>
 
       <section class="resumen" aria-labelledby="essentials">
         <h2 id="essentials">The essentials</h2>
         <ul>
           <li>Estandartes doesn't ask you to create an account and <strong>does not collect your personal data</strong>.</li>
-          <li>Today the game has <strong>no ads, no purchases and no analytics or tracking tools</strong>.</li>
+          <li>From version 0.7.1, the game shows ads from <strong>Google AdMob</strong>, always <strong>child-appropriate and non-personalized</strong>, and it does not use your advertising ID. There are <strong>optional rewarded ads</strong> (in the shop and to call the merchant at the Market: only if you choose to watch them) and, outside of matches, a <strong>banner on the main menu</strong> and, sometimes, a <strong>full-screen ad when you return to the menu</strong> after a match. <strong>There are never ads while you play.</strong></li>
+          <li>The game has no purchases and no analytics or tracking tools.</li>
           <li>Your saved games, settings, maps and banner are stored <strong>only on your phone</strong>. We never see them.</li>
           <li>1 vs 1 connects two phones <strong>directly on the same WiFi network</strong>, without going through any server.</li>
-          <li>If we add ads or the purchase to remove them, <strong>we will update this policy first</strong> and let you know.</li>
+          <li>If we add other kinds of ads, personalized ads or the purchase to remove them, <strong>we will update this policy first</strong> and let you know.</li>
         </ul>
       </section>
 
@@ -89,7 +90,7 @@
       <p><strong>Android backup:</strong> if you have backup to your Google account turned on, Android may include this data in it so it can be restored on another phone. That backup is handled by Google according to your settings and its privacy policy; we have no access to it.</p>
 
       <h2 id="not-collected">4. What we don't collect</h2>
-      <p>We do not collect or receive your name, email, phone number, contacts, photos, location, advertising ID, device identifiers or what you do in the game. The game has no accounts, no chat and no online social features, and it does not use cookies.</p>
+      <p>We do not collect or receive your name, email, phone number, contacts, photos, location, advertising ID, device identifiers or what you do in the game. When an ad is shown, Google processes some technical data to show it to you (see section 8). The game has no accounts, no chat and no online social features, and it does not use cookies.</p>
 
       <h2 id="wifi">5. 1 vs 1 over WiFi</h2>
       <p>To play against another person, the two phones connect <strong>directly to each other</strong> on the same WiFi network or one phone's hotspot, without internet and without servers. To do so:</p>
@@ -113,9 +114,10 @@
         <table class="tabla">
           <thead><tr><th scope="col">Permission</th><th scope="col">What it is used for</th></tr></thead>
           <tbody>
-            <tr><td>Network access (<code>INTERNET</code>), network and WiFi state (<code>ACCESS_NETWORK_STATE</code>, <code>ACCESS_WIFI_STATE</code>) and local network announcements (<code>CHANGE_WIFI_MULTICAST_STATE</code>)</td><td>Only to find rooms and play 1 vs 1 on your local network. The game does not connect to any server of ours.</td></tr>
+            <tr><td>Network access (<code>INTERNET</code>), network and WiFi state (<code>ACCESS_NETWORK_STATE</code>, <code>ACCESS_WIFI_STATE</code>) and local network announcements (<code>CHANGE_WIFI_MULTICAST_STATE</code>)</td><td>To find rooms and play 1 vs 1 on your local network and, from version 0.7.1, to load the ads (from Google AdMob). The game does not connect to any server of ours. The advertising ID permission (<code>AD_ID</code>) and the permissions of the Android advertising APIs (<code>ACCESS_ADSERVICES_AD_ID</code>, <code>ACCESS_ADSERVICES_ATTRIBUTION</code> and <code>ACCESS_ADSERVICES_TOPICS</code>), which the ads SDK adds, are removed: the game does not have them.</td></tr>
             <tr><td>Read and write files (<code>READ_EXTERNAL_STORAGE</code>, <code>WRITE_EXTERNAL_STORAGE</code>)</td><td>Only on older Android versions, to import and share the maps and files you choose.</td></tr>
             <tr><td>Vibration (<code>VIBRATE</code>)</td><td>From version 0.6.0, so the phone vibrates when you are attacked or the match ends. It can be turned off in Settings. It gives no access to any data.</td></tr>
+            <tr><td>Keep the phone awake and foreground service (<code>WAKE_LOCK</code>, <code>FOREGROUND_SERVICE</code>)</td><td>From version 0.7.1. They are added by the Android task library (WorkManager) that Google's ads SDK uses to send its internal pings even if you close the game. The game does not use them directly and they give no access to your data.</td></tr>
           </tbody>
         </table>
       </div>
@@ -126,23 +128,25 @@
         <li><strong>Google Play.</strong> You download the game from Google Play, which processes your data under the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>. Google gives us aggregated statistics (for example, installs by country or phone model) and, if you agreed to share usage and diagnostics data with Google, crash reports for the game. We cannot identify anyone from this information.</li>
         <li><strong>Unity.</strong> The game is built with the Unity engine, by Unity Technologies. We do not use Unity's ads, purchases or analytics services. Test versions before 0.5.2 could send Unity a technical report when the engine crashed (with the phone model and operating system, the game version and the technical details of the error, without your name or contact details). In versions after 0.5.1 this feature is turned off. More information in the <a href="https://unity.com/legal/privacy-policy" rel="noopener">Unity Privacy Policy</a>.</li>
         <li><strong>GitHub.</strong> This website is hosted on GitHub Pages, by GitHub, Inc. Like any web server, GitHub may log your IP address for security purposes, according to its <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">privacy statement</a>. Our site uses no cookies, no analytics and loads no content from other sites.</li>
+        <li><strong>Google AdMob (ads, from version 0.7.1).</strong> The Google Mobile Ads SDK requests and shows the ads: the rewarded ones when you choose to watch them, the main menu banner and the full-screen one when you return to the menu. Every request is tagged as <strong>child-directed</strong> and <strong>under the age of consent</strong>, with a G content rating. So ads are not personalized, the advertising ID is not used (the game removes that permission) and Google limits the data it processes to what is needed to show the ad, measure it without profiles, prevent fraud and keep the app working: for example, the IP address (from which an approximate country or region can be inferred), the phone model and system, the language, the app and its version, and how you interact with the ad. We do not receive that data, only aggregate statistics (how many ads were watched). Google processes it under its <a href="https://policies.google.com/privacy" rel="noopener">privacy policy</a> and its page on <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">how it uses data from apps that use its services</a>. AdMob is self-certified under the Google Play Families program.</li>
         <li><strong>Email.</strong> If you write to us, your message reaches us through Gmail, by Google.</li>
       </ul>
 
       <h2 id="children">9. Children</h2>
-      <p>Estandartes is suitable for everyone, including children under 13. Because the game does not collect personal data, we do not collect data from any child.</p>
-      <p>If we add ads in the future:</p>
+      <p>Estandartes is suitable for everyone, including children under 13. We do not collect personal data from anyone, including children.</p>
+      <p>About the ads:</p>
       <ul>
-        <li>we will only use ad providers self-certified under the Google Play Families program;</li>
-        <li>children will not be shown personalized ads, and their advertising ID will not be collected;</li>
-        <li>we will comply with COPPA, the Google Play Families policies and the child protection laws of your country.</li>
+        <li>rewarded ads are optional: they only appear if you choose to watch them (in the shop or to call the merchant), and the whole game can be played without watching them;</li>
+        <li>the others only appear outside of matches: a banner on the main menu, kept apart from the buttons, and, at most one every five minutes and never after your first match or the tutorial, a full-screen ad when you return to the menu, which you close with its button;</li>
+        <li>we only use Google AdMob, self-certified under the Google Play Families program, and we ask <strong>for everyone</strong> for child-appropriate ads: non-personalized, without the advertising ID and with a G rating;</li>
+        <li>we comply with COPPA, the Google Play Families policies and the child protection laws of your country.</li>
       </ul>
       <p>If you are a parent or guardian and believe a child has sent us personal data (for example, in an email), write to us at <a href="mailto:kuantis.dev@gmail.com">kuantis.dev@gmail.com</a> and we will delete it.</p>
 
       <h2 id="future">10. Ads and purchases in the future</h2>
-      <p>We plan to add ads and an in-game purchase to remove them. Before turning them on:</p>
+      <p>Today there are child-appropriate, non-personalized ads from Google AdMob (section 8). We plan to add an in-game purchase to remove the ads that appear on their own. If we add personalized ads or other ad providers:</p>
       <ul>
-        <li>we will update this policy with the ad providers we use and the data they process (for example, the advertising ID, IP address or device data);</li>
+        <li>we will update this policy with the providers and the data they process;</li>
         <li>we will ask for your consent where the law requires it, for example in the European Economic Area, the United Kingdom and Switzerland;</li>
         <li>we will update the "Data safety" section of the game's Google Play listing.</li>
       </ul>
@@ -152,7 +156,7 @@
       <p>If you write to us, we use your email address and what you tell us only to reply and resolve your request. We do not sell this data or share it with anyone, unless the law requires it.</p>
 
       <h2 id="legal-bases">12. Legal bases</h2>
-      <p>Where the law requires a legal basis (for example, under the GDPR or the LGPD), we process the data in your emails based on our legitimate interest in answering your requests and, where applicable, to comply with legal obligations. If personalized ads are added in the future, we will show them only with your consent, which you can withdraw at any time.</p>
+      <p>Where the law requires a legal basis (for example, under the GDPR or the LGPD), we process the data in your emails based on our legitimate interest in answering your requests and, where applicable, to comply with legal obligations. The ads are not personalized and do not use profiles. If personalized ads are added in the future, we will show them only with your consent, which you can withdraw at any time.</p>
 
       <h2 id="no-sale">13. We don't sell your data</h2>
       <p>We do not sell personal information or share it for cross-context behavioral advertising, as defined by California law (CCPA/CPRA) and similar laws. We do not process sensitive personal information.</p>
