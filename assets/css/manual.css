@@ -74,6 +74,7 @@
 .tira caption { text-align: left; font-family: Georgia, serif; font-size: 1.15rem; color: var(--dorado); padding: 8px 0; }
 .tira th, .tira td { padding: 10px 8px; text-align: center; vertical-align: bottom; border-bottom: 1px solid var(--linea); }
 .tira thead th { font-family: Georgia, serif; font-size: 0.85rem; color: var(--texto-suave); font-weight: normal; }
+.tira td.aun-no { vertical-align: middle; font-size: 0.85rem; font-style: italic; color: var(--texto-suave); }
 .tira tbody th { text-align: left; }
 
 /* Cartas de edificios y unidades */
@@ -163,3 +164,6 @@
   .estandarte .escudo { width: 92px; height: 92px; border-radius: 20px; }
 }
 .ruta + .nota { margin: 18px 0 56px; }
+.paso.siguiente { border-color: var(--dorado-fuerte); }
+.paso.siguiente::before { background: var(--vino-claro); }
+.paso.siguiente .estado-paso { color: var(--dorado); }
